@@ -1,0 +1,167 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title></title>
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width">
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+<!-- build:css(.) styles/vendor.css -->
+<!-- bower:css -->
+<!-- endbower -->
+<!-- endbuild -->
+<!-- build:css(.tmp) styles/main.css -->
+
+<!-- Bootstrap Core CSS -->
+<link href="styles/bootstrap.min.css" rel="stylesheet">
+
+<!-- Custom CSS -->
+<link href="styles/half-slider.css" rel="stylesheet">
+<link rel="stylesheet" href="styles/main.css">
+<!-- endbuild -->
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+<body ng-app="sitedesophie">
+<!--[if lte IE 8]>
+<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
+
+<!-- Add your site or application content here -->
+
+<!--  barre de navigation-->
+      <!--<a class="navbar-brand" href="#/">site</a> -->
+              <nav class="navbar  navbar-fixed-top ">
+                  <div class="container-fluid">
+                    <div class="navbar-header">
+                      <a  class="navbar-brand" href="#/">SOPHIE CHAFFAUT</br><!--<span class="titre">Vidéaste, Photographe</span>--></a>
+
+                      </div>
+                      <ul class="nav navbar-nav">
+                      <li ><a ng-href="#/main" >ACCUEIL</a></li>
+                      <li><a ng-href="#/realisation" >RÉALISATIONS</a></li>
+                      <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" ng-href="#/critiques" >CRITIQUES<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                          <li><a ng-href="#/critiques/#therapie">Une agréable thérapie de groupe</a></li>
+                          <li><a ng-href="#/critiques/#jugement">Quand le jugement s’envole</a></li>
+                        </ul>
+                      </li>
+                      <li>
+                        <a class="dropdown-toggle" data-toggle="dropdown" ng-href="#/photographies" >PHOTOGRAPHIES<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                          <li><a ng-href="#/critiques/#paysages">Paysages</a></li>
+                          <li><a ng-href="#/critiques/#miseenscene">Mise en scène</a></li>
+                          <li><a ng-href="#/critiques/#mdoele">Modèle</a></li>
+                        </ul>
+                      </li>
+                      <li><a ng-href="#/moi">QUI SUIS-JE ?</a></li>
+                    </ul>
+                  </div>
+                </nav>
+<!-- fin barre de navigation-->
+
+<header id="myCarousel" class="carousel slide">
+<ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+</ol>
+
+<div class="carousel-inner">
+    <div class="item active">
+        <div class="fill" style="background-image:url('images/Felinspourlautre.png');"></div>
+        <div class="carousel-caption">
+            <h2><!--Caption 1--></h2>
+        </div>
+    </div>
+    <div class="item">
+        <div class="fill" style="background-image:url('images/sophie.png');"></div>
+        <div class="carousel-caption">
+            <h2><!--Caption 2--></h2>
+        </div>
+    </div>
+    <div class="item">
+        <div class="fill" style="background-image:url('images/2.png');"></div>
+        <div class="carousel-caption">
+            <h2><!--Caption 3--></h2>
+        </div>
+    </div>
+</div>
+
+<a class="left carousel-control" href="#myCarousel" data-slide="prev">
+    <span class="icon-prev"></span>
+</a>
+<a class="right carousel-control" href="#myCarousel" data-slide="next">
+    <span class="icon-next"></span>
+</a>
+
+</header>
+
+<div class="container-fluid">
+  <div ng-view=""></div>
+</div>
+<!-- Footer -->
+<div class="footer">
+            <ul>
+            <li>SophieChaffaut-2016- Tout droits réservés</li>
+            <li>Me contacter: Chaffaut.sophie@gmail.com</li>
+            </ul>
+            <hr/>
+</div>
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
+  </body>
+  </html>
+     <script>
+       !function(A,n,g,u,l,a,r){A.GoogleAnalyticsObject=l,A[l]=A[l]||function(){
+       (A[l].q=A[l].q||[]).push(arguments)},A[l].l=+new Date,a=n.createElement(g),
+       r=n.getElementsByTagName(g)[0],a.src=u,r.parentNode.insertBefore(a,r)
+       }(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+       ga('create', 'UA-XXXXX-X');
+       ga('send', 'pageview');
+    </script>
+
+    <!-- build:js(.) scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.js"></script>
+    <script src="bower_components/angular-cookies/angular-cookies.js"></script>
+    <script src="bower_components/angular-resource/angular-resource.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+    <script src="bower_components/angular-touch/angular-touch.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+        <!-- build:js({.tmp,app}) scripts/scripts.js -->
+        <script src="scripts/app.js"></script>
+        <script src="scripts/controllers/main.js"></script>
+        <script src="scripts/controllers/realisations.js"></script>
+        <script src="scripts/controllers/critiques.js"></script>
+        <script src="scripts/controllers/moiCtrl.js"></script>
+
+        <!-- endbuild -->
+
+        <!-- jQuery slider-->
+        <script src="scripts/js/jquery.js"></script>
+
+        <!-- Bootstrap Core JavaScript -->
+        <script src="scripts/js/bootstrap.min.js"></script>
+
+        <!-- Script to Activate the Carousel -->
+        <script>
+        $('.carousel').carousel({
+            interval: 10000 //changes the speed
+        })
+        </script>

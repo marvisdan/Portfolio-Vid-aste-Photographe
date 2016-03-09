@@ -1,0 +1,254 @@
+$icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
+@import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
+
+
+@font-face {
+  font-family: Raleway-Bold;
+  src: url("../font/raleway/Raleway-SemiBold.ttf");
+}
+@font-face {
+  font-family: Raleway;
+  src: url("../font/raleway/Raleway-Regular.ttf");
+}
+
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+body {
+  padding: 0;
+}
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header,
+.marketing,
+.footer {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Custom page header */
+.header {
+  border-bottom: 1px solid #e5e5e5;
+  //margin-bottom: 10px;
+  //background-color: white;
+
+  /* Make the masthead heading the same height as the navigation */
+  h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 40px;
+    padding-bottom: 19px;
+  }
+}
+
+/* Custom page footer */
+.footer {
+  padding-top: 19px;
+  color: #777;
+  border-top: 1px solid #e5e5e5;
+}
+
+.container-narrow > hr {
+  margin: 30px 0;
+}
+
+/* Main marketing message and sign up button */
+.jumbotron {
+  text-align: center;
+  border-bottom: 1px solid #e5e5e5;
+
+  .btn {
+    font-size: 21px;
+    padding: 14px 24px;
+  }
+}
+
+/* Supporting marketing content */
+.marketing {
+  margin: 40px 0;
+
+  p + h4 {
+    margin-top: 28px;
+  }
+}
+div.navbar.navbar-default{
+ margin: 0px;
+ padding: 0px
+}
+.header{
+  //background-color: white;
+}
+.subtitle{
+color: black;
+//font-size: 1.2em;
+}
+.navbar-brand{
+  color: black;
+  font-size: 2em;
+  font-family: Raleway-Bold;
+}
+.mesimages{
+  padding-left: 130px;
+}
+h1{
+
+  padding-left: 150px;
+  font-family: Raleway-Bold;
+  text-transform: uppercase;
+
+}
+h2{
+
+  padding-left: 150px;
+  font-family: Raleway;
+  margin-top: 40px;
+}
+.ode{
+  padding-left:140px;
+}
+.ode h2{
+  padding-left:0px;
+}
+.ode p{
+    padding: 0px;
+    width: 450px;
+    text-align: justify;
+  }
+.felin{
+  padding-left: 140px;
+}
+  .felin h2{
+    padding-left: 0px;
+    font-family: Raleway;
+    //margin-top: 40px;
+  }
+  .felin p{
+    width: 450px;
+    text-align: justify;
+    padding-bottom: 40px;
+
+  }
+.critique1 h2{
+  padding-left:0px;
+}
+  .critique2 p{
+    padding: 0px;
+    text-align: justify;
+  }
+.critique2 h2{
+  padding-left:0px;
+    }
+  .critique2 p{
+    padding: 0px;
+    text-align: justify;
+  }
+.navbar{
+  background-color: white;
+  border-bottom: 2px solid black;
+  padding-top: 10px;
+  //padding-bottom: 12px;
+}
+  li{
+    background-color: white;
+  }
+    a{
+      background-color: white;
+      color:grey;
+    }
+    a:hover{
+      background-color: white;
+      color: grey;
+    }
+    a:focus{
+      background-color: black;
+      color:white;
+
+    }
+    .dropdown-toggle:focus{
+      background-color: black;
+      color:white;
+    }
+    li:focus{
+      background-color: black;
+    }
+
+  /*.titre{
+    //text-transform: uppercase;
+    font-size: 0.6em;
+    color: #555555;
+    text-align: center;
+    text-align: center;
+    //padding-left: 35px;
+  }*/
+.footer{
+  background-color: black;
+  height: 150px;
+  color: white;
+  clear: both;
+}
+.footer li{
+      list-style-type: none;
+      background-color: black;
+}
+
+.age{
+  display: inline;
+  font-weight: normal;
+
+}
+.prenom{
+  display: inline;
+  font-size: 1.4em;
+  font-weight: bold;
+  padding-top: 50px;
+
+}
+p{
+  text-align: justify;
+}
+.savoirfaire{
+  list-style-type: none;
+  padding: 0;
+
+}
+
+// images de la pages d'accueil
+.post-content {
+background-color: black;
+position: relative;
+top: -50px;
+height: 50px;
+}
+
+.caption{
+    text-align: center;
+    color:#FFF !important;
+    font-size: large !important;
+}
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 730px;
+  }
+
+  /* Remove the padding we set earlier */
+  .header,
+  .marketing,
+  .footer {
+    padding-left: 0;
+    padding-right: 0;
+
+  }
+  /* Space out the masthead */
+  .header {
+    margin-bottom: 0px;
+  }
+  /* Remove the bottom border on the jumbotron for visual effect */
+  .jumbotron {
+    border-bottom: 0;
+  }
+}

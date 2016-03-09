@@ -1,0 +1,330 @@
+
+$icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
+// bower:scss
+@import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
+// endbower
+
+@font-face {
+  font-family: Raleway-Bold;
+  src: url("../font/raleway/Raleway-SemiBold.ttf");
+}
+@font-face {
+  font-family: Raleway;
+  src: url("../font/raleway/Raleway-Regular.ttf");
+}
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+html, body,.container-fluid{
+  padding-left: 0px;
+  padding-right: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header,
+.marketing,
+.footer {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+/* Custom page header */
+.header {
+  border-bottom: 1px solid #e5e5e5;
+  //margin-bottom: 10px;
+  //background-color: white;
+  /* Make the masthead heading the same height as the navigation */
+  h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 40px;
+    padding-bottom: 19px;
+  }
+}
+/* Custom page footer */
+.footer {
+  padding-top: 19px;
+  color: #777;
+  border-top: 1px solid #e5e5e5;
+}
+.container-narrow > hr {
+  margin: 30px 0;
+}
+/* Main marketing message and sign up button */
+.jumbotron {
+  text-align: center;
+  border-bottom: 1px solid #e5e5e5;
+
+  .btn {
+    font-size: 21px;
+    padding: 14px 24px;
+  }
+}
+/* Supporting marketing content */
+.marketing {
+  margin: 40px 0;
+
+  p + h4 {
+    margin-top: 28px;
+  }
+}
+.navbar{
+box-shadow: 0px 1px 12px #555;
+}
+div.navbar.navbar-default{
+ margin: 0;
+ padding: 0;
+}
+.header{
+  //background-color: white;
+}
+.subtitle{
+color: black;
+//font-size: 1.2em;
+}
+.navbar-brand{
+  color: white;
+  font-size: 1.5em;
+  opacity: 0.9;
+  font-family: Lato-light, Raleway-Bold, Helvetica, ;
+}
+.navbar-header{
+  padding-left: 70px;
+}
+a.navbar-brand:hover{
+  color: white;
+  margin-left: 50px;
+  font-family: Lato-light, Raleway-Bold, Helvetica, ;
+}
+.mesimages{
+  padding-left: 130px;
+}
+#titre-page{
+  background-color: #f7f7f7;
+  height: 100px;
+  margin-bottom: 20px;
+  h1.sous-titre{
+    padding-left: 20px;
+    font-family: Lato-light, Raleway, Helvetica ;
+    text-transform: uppercase;
+  }
+  p{
+      padding-left: 20px;
+      font-size: 1.2em;
+      color:#5e5d5d;
+  }
+}
+h2{
+
+  padding-left: 150px;
+  font-family: Raleway;
+  margin-top: 40px;
+}
+.ode{
+  padding-left:140px;
+  h2{
+  padding-left:0px;
+    }
+  p{
+    padding: 0px;
+    width: 450px;
+    text-align: justify;
+  }
+}
+
+.felin{
+  padding-left: 140px;
+  h2{
+    padding-left: 0px;
+    font-family: Raleway;
+    //margin-top: 40px;
+  }
+  p{
+    width: 450px;
+    text-align: justify;
+  }
+}
+.critique1{
+  h2{
+  padding-left:0px;
+    }
+  p{
+    padding: 0px;
+    text-align: justify;
+  }
+}
+.critique2{
+  h2{
+  padding-left:0px;
+    }
+  p{
+    padding: 0px;
+    text-align: justify;
+  }
+}
+.navbar{
+  background-color: #212121;
+  border-bottom: 2px solid #212121;
+  padding-top: 10px;
+  padding-bottom: 12px;
+  li{
+    background-color: #212121;
+    a{
+      background-color: #212121;
+      color:gray;
+    }
+    a:hover{
+      background-color: #212121;
+      color: white;
+    }
+    a:focus{
+      background-color: #212121;
+      color:white;
+    }
+    a:dropdown-toggle{
+      background-color: #212121;
+    }
+    ul.dropdown-menu{
+      background-color: #212121;
+
+    }
+    .dropdown-toggle:focus{
+      background-color: #212121;
+      color:white;
+    }
+    li:focus{
+      background-color: #212121;
+    }
+  }
+  .titre{
+    //text-transform: uppercase;
+    font-size: 0.7em;
+    color: grey;
+    text-align: center;
+    padding-left: 20px;
+    font-family: Raleway;
+  }
+}
+#box-polaroid{
+  margin-left:auto;
+  margin-right:auto;
+}
+.vignette{
+  border: 1px solid #212121;
+  margin-bottom: 20px;
+}
+.footer {
+  background-color:#212121;
+  height: 150px;
+  color: gray;
+  font-size: 1.2em;
+  clear: both;
+  ul{
+    display: inline-block;
+    li{
+      list-style-type: none;
+      display: inline-block;
+      p{
+        text-align:center;
+      }
+      .text-contact
+      {
+        text-align: right;
+        margin-left: 700px;
+      }
+    }
+  }
+  .sn{
+    margin-left:600px;
+    margin-right: 50px;
+    a.socicon-button [class^="socicon-"], .socicon-button [class*=" socicon-"] {
+    text-decoration: none;
+  	vertical-align: middle;
+  	margin-right: 0.3em;
+    color: gray;
+    font-size: 20px;
+    }
+    a.socicon-button [class^="socicon-"], .socicon-button [class*=" socicon-"]:hover{
+      color: white;
+      transition-duration: 0.5s;
+    }
+  }
+}
+.age{
+  display: inline;
+  font-weight: normal;
+}
+.prenom{
+  display: inline;
+  font-size: 1.4em;
+  font-weight: bold;
+  padding-top: 50px;
+}
+p{
+  text-align: justify;
+}
+.savoirfaire{
+  list-style-type: none;
+  padding: 0;
+}
+// images de la pages d'accueil
+.post-content {
+background-color: #212121;
+position: relative;
+top: -50px;
+height: 50px;
+}
+.content-modele{
+  padding-bottom: 30px;
+}
+.caption{
+    color:#FFF !important;
+    font-size: large !important;
+    p
+    {
+      font-size: 1.1em;
+      font-family: Lato-light, Raleway, Helvetica;
+      text-align: center;
+      padding-top: 10px;
+    }
+}
+.cv{
+  margin-left: 330px;
+  margin-top: 60px;
+  border: 1px solid black;
+  padding: 10px;
+  color: black;
+
+}
+.cv:hover{
+  color: black;
+}
+.title-autre{
+  padding-left: 0px;
+  margin-left: 0px;
+  padding-top: 20px;
+}
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 730px;
+  }
+  /* Remove the padding we set earlier */
+  .header,
+  .marketing,
+  .footer {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  /* Space out the masthead */
+  .header {
+    margin-bottom: 0px;
+  }
+  /* Remove the bottom border on the jumbotron for visual effect */
+  .jumbotron {
+    border-bottom: 0;
+  }
+}
