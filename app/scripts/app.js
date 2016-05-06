@@ -80,6 +80,10 @@ var app = angular
         templateUrl: 'views/miseenscene.html',
         controller: 'miseensceneCtrl'
       })
+      .when('/rea',{
+        templateUrl: 'views/rea.html',
+        controller: 'reaCtrl'
+      })
       .otherwise({
         redirectTo: '/'
       });
