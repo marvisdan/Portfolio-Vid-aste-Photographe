@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title></title>
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=0.7" />
+<meta name="keywords" content="sophie, chaffaut, sophiechaffaut, paris, vidéaste, photographe, modèle, critiques , etudiante, student, documentaire, fiction, cinéma, audiovisuel, université, Marne-la-vallée, upem, miseenscène, payasage, vimeo, youtube">
+<meta name="description" content="sophie chafaut Portfolio. vidéaste et photographe .">
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<!-- lien pour les icones socicon-->
+<link href="https://file.myfontastic.com/n6vo44Re5QaWo8oCKShBs7/icons.css" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<!--lightbox -->
+<script src="lightbox2/dist/js/lightbox.js"></script>
+<!--Masonry -->
+<script src="node_modules/masonry-layout/dist/masonry.pkgd.min.js"></script>
+<script src="scripts/js/masonry-myselector.js"></script>
+
+
+<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+<link rel="shortcut icon" type="images/x-icon" href="images/camera.ico">
+<!-- Bootstrap Core CSS -->
+<link href="styles/bootstrap.min.css" rel="stylesheet">
+
+<!-- Custom CSS -->
+<link href="styles/half-slider.css" rel="stylesheet">
+<link href="lightbox2/dist/css/lightbox.css" rel="stylesheet">
+<link rel="stylesheet" href="styles/main.css">
+
+</head>
+<body ng-app="sitedesophie" >
+  <nav class="navbar  navbar-fixed-top ">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a  class="navbar-brand" href="#/">SOPHIE CHAFFAUT</br><span class="titre">Vidéaste, Photographe</span></a>
+      </div>
+      <ul class="nav navbar-nav">
+        <li ><a ng-href="#/main" >ACCUEIL</a></li>
+        <li ><a ng-href="#/realisation" >RÉALISATIONS</a></li>
+        <li ><a ng-href="#/photographie" >PHOTOGRAPHIES</a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" ng-href="#/critiques">CRITIQUES<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a ng-href="#/critiques/#therapie">Only lovers left alive, Jim Jarmush</a></li>
+            <li><a ng-href="#/critiques/#jugement">Vol au dessus d’un nid de coucou, Milos Forman</a></li>
+          </ul>
+        </li>
+        <li><a ng-href="#/moi">QUI SUIS-JE ?</a></li>
+      </ul>
+    </div>
+  </nav>
+  <!-- fin barre de navigation-->
+  <header id="myCarousel" class="carousel slide">
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+    <li data-target="#myCarousel" data-slide-to="3"></li>
+    <li data-target="#myCarousel" data-slide-to="4"></li>
+    <li data-target="#myCarousel" data-slide-to="5"></li>
+
+  </ol>
+  <div class="carousel-inner">
+    <div class="item active">
+      <div class="fill" style="background-image:url('images/chemin-des-ames/photogramme-chemin-des-âmes1.png');"></div>
+      <div class="carousel-caption">
+        <h2><!--Caption 3--></h2>
+      </div>
+    </div>
+    <div class="item">
+      <div class="fill" style="background-image:url('images/mise-en-scene/Shooting-clemence.jpg');"></div>
+      <div class="carousel-caption">
+        <h2><!--Caption 2--></h2>
+      </div>
+    </div>
+    <div class="item">
+      <div class="fill" style="background-image:url('images/paysage/paysage_copie.png');"></div>
+      <div class="carousel-caption">
+        <h2><!--Caption 3--></h2>
+      </div>
+    </div>
+    <div class="item ">
+      <div class="fill" style="background-image:url('images/documentaire/Felinspourlautre.png');"></div>
+      <div class="carousel-caption">
+        <h2><!--Caption 1--></h2>
+      </div>
+    </div>
+    <div class="item">
+      <div class="fill" style="background-image:url('images/Making-of-maried.png');"></div>
+      <div class="carousel-caption">
+        <h2><!--Caption 3--></h2>
+      </div>
+    </div>
+
+
+    <div class="item">
+      <div class="fill" style="background-image:url('images/paysage/Barcelos.png');"></div>
+      <div class="carousel-caption">
+        <h2><!--Caption 3--></h2>
+      </div>
+    </div>
+    <div class="item">
+      <div class="fill" style="background-image:url('images/chemin-des-ames/photogramme-chemin-des-ames2.png');"></div>
+      <div class="carousel-caption">
+        <h2><!--Caption 3--></h2>
+      </div>
+    </div>
+
+  </div>
+  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+    <span class="icon-prev"></span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" data-slide="next">
+    <span class="icon-next"></span>
+  </a>
+  </header>
+    </div>
+  <div class="container-fluid" id="page">
+    <div ng-view=""></div>
+  </div>
+  <!-- Footer -->
+  <div class="footer">
+  <ul class="content-footer">
+    <ul class="copyright">
+      <li><p>SophieChaffaut-2016- Tous droits réservés</p></li>
+    </ul>
+    <ul class="sn">
+      <li>Mes réseaux sociaux</li><br/>
+      <li><a href="https://www.facebook.com/Sophie-C-Cr%C3%A9ations-audiovisuelles-110447139045462/?pnref=story" target="_blank" class="pure-button socicon-button"><span class="socicon socicon-facebook"></span></a></li>
+      <li><a href="https://fr.linkedin.com/in/sophie-chaffaut-6393b0109" target="_blank" class="pure-button socicon-button"><span class="socicon socicon-linkedin"></span></a></li>
+      <li><a href="https://vimeo.com/user48403095" target="_blank" class="pure-button socicon-button"><span class="socicon socicon-vimeo"></span></a></li>
+      <li><a href="https://www.youtube.com/channel/UCMA1s8OSoZKVPnGRurkhxLQ" target="_blank" class="pure-button socicon-button"><span class="socicon socicon-youtube"></span></a></li>
+    </ul>
+  </ul>
+  </div>
+  <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
+  <script>
+     !function(A,n,g,u,l,a,r){A.GoogleAnalyticsObject=l,A[l]=A[l]||function(){
+     (A[l].q=A[l].q||[]).push(arguments)},A[l].l=+new Date,a=n.createElement(g),
+     r=n.getElementsByTagName(g)[0],a.src=u,r.parentNode.insertBefore(a,r)
+     }(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+     ga('create', 'UA-XXXXX-X');
+     ga('send', 'pageview');
+  </script>
+
+  <!-- bower:js -->
+  <script src="/bower_components/jquery/dist/jquery.js"></script>
+  <script src="/bower_components/angular/angular.js"></script>
+  <script src="/bower_components/bootstrap/dist/js/bootstrap.js"></script>
+  <script src="/bower_components/angular-animate/angular-animate.js"></script>
+  <script src="/bower_components/angular-cookies/angular-cookies.js"></script>
+  <script src="/bower_components/angular-resource/angular-resource.js"></script>
+  <script src="/bower_components/angular-route/angular-route.js"></script>
+  <script src="/bower_components/angular-sanitize/angular-sanitize.js"></script>
+  <script src="/bower_components/angular-touch/angular-touch.js"></script>
+  <script src="/bower_components/lightbox2/dist/js/lightbox.js"></script>
+  <script src="/bower_components/get-size/get-size.js"></script>
+  <script src="/bower_components/ev-emitter/ev-emitter.js"></script>
+  <script src="/bower_components/desandro-matches-selector/matches-selector.js"></script>
+  <script src="/bower_components/fizzy-ui-utils/utils.js"></script>
+  <script src="/bower_components/outlayer/outlayer.js"></script>
+  <script src="/bower_components/masonry/masonry.js"></script>
+  <!-- build:js({.tmp,app}) scripts/scripts.js -->
+  <script src="scripts/app.js"></script>
+  <script src="scripts/controllers/main.js"></script>
+  <script src="scripts/controllers/realisations.js"></script>
+  <script src="scripts/controllers/critiques.js"></script>
+  <script src="scripts/controllers/moiCtrl.js"></script>
+  <script src="scripts/controllers/photoCtrl.js"></script>
+  <script src="scripts/controllers/modeleCtrl.js"></script>
+  <script src="scripts/controllers/paysageCtrl.js"></script>
+  <script src="scripts/controllers/fictionCtrl.js"></script>
+  <script src="scripts/controllers/cvCtrl.js"></script>
+  <script src="scripts/controllers/autreCtrl.js"></script>
+  <script src="scripts/controllers/miseensceneCtrl.js"></script>
+  <script src="scripts/controllers/reaCtrl.js"></script>
+  <!-- endbuild -->
+  <!-- jQuery slider-->
+  <script src="scripts/js/jquery.js"></script>
+  <!-- Bootstrap Core JavaScript -->
+  <script src="scripts/js/bootstrap.min.js"></script>
+  <!-- Script to Activate the Carousel -->
+  <script>
+  $('.carousel').carousel({
+      interval: 5000 //changes the speed
+  })
+  </script>
+</body>

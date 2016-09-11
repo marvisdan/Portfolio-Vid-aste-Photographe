@@ -1,0 +1,39 @@
+<div class="container-fluid" id="titre-page">
+<h1 class="sous-titre">Qui suis-je ?</h1>
+<p></p>
+</div>
+<div class="content" >
+  <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" ng-controller="moiCtrl">
+    <img  class="img-responsive" ng-src="{{moi.img}}" id="polaroid-photo"></img>
+    <hr/>
+    <div class="row">
+      <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+        <p class="prenom">{{moi.nom}} <span class="age">{{moi.age}} ans</span></p>
+        <p><span>{{moi.fonction}}</span></br>
+          <i>Amoureuse du réel</i> que ce soit en photographie ou au cinéma.
+           Mon objectif est de devenir plus tard réalisatrice de documentaire. J'aime mettre en scène le vrai et retranscrire le monde tel que je le vois.
+         Et par ce biais, apprendre à le voir autrement.
+       Amoureuse des gens, des cultures, des histoires, des <i>Histoires</i>, des voyages, de l'inconnu.</p>
+       <p class="prenom">Mes cinéastes inspirants :</p></br>
+      Jean Rouch, Raymond Depardon, Lars Von Trier, Patricio Guzman, Frederick Wiseman, Apichatpong Weerasethakul, Wang Bing
+    </div>
+      <div class=" col-lg-6 col-md-6 col-sm-12 col-xs-12">
+        <p class="prenom"><b>Ce que je fais:</b> </p>
+        <ul class="savoirfaire">
+          <li>Photographie ( argentique et numérique )</li>
+          <li>Court métrage de fiction</li>
+          <li>Réalisation de documentaires</li>
+          <li>Figuration/Modèle</li>
+          <li>Écriture de critique</li>
+        </ul>
+        <div class=" col-lg-12 col-md-12 col-sm-12 col-xs-12 boutoncv">
+            <a class="cv" ng-href="#/cv">Voir mon Cv</a>
+        </div> 
+        </div>
+
+      </div>
+
+    </br>
+    <hr/>
+  </div>
+</div>
